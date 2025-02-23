@@ -31,11 +31,17 @@ function validateInput(){
 
 function addTask(task){
      const li = document.createElement('li');
-     li.innerHTML = `<span>${task}</span><button class='btn2'>Delete</button>`;
+     li.innerHTML = `<span>${task}</span>
+     <button class='btn2'>Delete</button>
+     <button class="btn3">Edit</button>`;
      list.appendChild(li);
 
      li.querySelector(".btn2").onclick = () => {
           deleteTask(li);
+     };
+
+     li.querySelector(".btn3").onclick = () => {
+          editTask(li);
      };
 }
 
@@ -43,6 +49,16 @@ function deleteTask(li){
      li.remove();
      saveTask();
      console.log("Task deleted");
+}
+
+function editTask(li) {
+     const span = li.querySelector("span");
+     const newText = prompt("Edit your task:", span.textContent);
+     if (newText.length != 0){
+          span.textContent = newText;
+          saveTask();
+          console.log("Task edited");
+     }
 }
 
 function saveTask(){
