@@ -62,6 +62,6 @@ txtInput.addEventListener("keypress", function(e){
 });
 
 function getTasks(){
-     const tasks = JSON.parse(localStorage.getItem('tasks'));
+     const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
      tasks.forEach(tsk => addTask(tsk));
 }

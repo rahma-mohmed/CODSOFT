@@ -6,6 +6,7 @@ body{
      align-items: center;
      height: 100vh;
      margin: 0;
+     font-size: 20px;
 }
 
 .container{
@@ -13,13 +14,23 @@ body{
      padding: 20px;
      border-radius: 10px;
      box-shadow: 0 0 10px rgba(13, 30, 36, 0.1);
-     width: 500px;
+     width: 600px;
      text-align: center;
 }
 
 h1{
      margin-bottom: 20px;
      color: #0a6179;
+}
+
+h1::before {
+     content: "";
+     display: inline-block;
+     width: 50px; 
+     height: 50px;
+     background-image: url("icons8-task-100.png");
+     background-size: cover; 
+     /* margin-right: 5px;  */
 }
 
 
@@ -38,7 +49,7 @@ button {
      border: none;
      border-radius: 5px;
      cursor: pointer;
-     font-style: italic;
+     font-size: 16px;
 }
 
 button:hover {
@@ -58,7 +69,8 @@ li::before {
 ul{
      list-style-type: none;
      padding-left: 0px;
-     margin-left: 150px;
+     /* margin-left: 150px; */
+     margin-left: 0;
 }
 
 li{
@@ -71,11 +83,3 @@ li span{
      padding-right: 20px;
 }
 
-li button {
-     background-color:  #1c6285;;
-     border: none;
-     color: white;
-     border-radius: 5px;
-     cursor: pointer;
-     padding: 10px;
-}
