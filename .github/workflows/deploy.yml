@@ -14,15 +14,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4  # Updated to latest version
+        uses: actions/checkout@v4  # ✅ Updated to latest version
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4  # Updated to latest version
+        uses: actions/configure-pages@v4  # ✅ Updated to latest version
 
       - name: Upload to GitHub Pages
-        uses: actions/upload-pages-artifact@v2  # Updated to latest version
+        uses: actions/upload-pages-artifact@v2  # ✅ Correct action for GitHub Pages
         with:
-          path: ./Portfolio  # Change this if your portfolio is in another subfolder
+          path: ./Portfolio  # ⬅️ Make sure this is the correct path for your portfolio
 
       - name: Deploy
         uses: actions/deploy-pages@v2
