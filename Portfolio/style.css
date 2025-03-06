@@ -253,6 +253,36 @@ footer {
 
      section {
           padding: 80px 5%;
+     }    
+}
+
+@media (max-width: 422px) {
+     header {
+          padding: 10px 5%;
+          display: flex;
+          font-size: 0.7em;
      }
-     
+
+     .main {
+          background: url('Handcoding.gif') no-repeat;
+          background-size: contain;
+          height: auto;
+          flex-direction: column;
+          text-align: center;
+          padding-top: 395px;
+          color: #0d736e;
+          background-color: #d1f6ef;
+          background-position: center 50px;
+     }
+}
+
+
+
+
+@media (max-width: 380px){
+     header {
+          padding: 10px 5%;
+          display: flex;
+          font-size: 0.6em;
+     }
 }
