@@ -225,7 +225,6 @@ footer {
 
      .main {
           background: url('Handcoding.gif') no-repeat;
-          /* background-size: contain; */
           height: auto;
           flex-direction: column;
           text-align: center;
@@ -237,7 +236,7 @@ footer {
 
      .main h2 {
           font-size: 1.5em;
-          padding-top: 100px;
+          padding-top: 30%;
      }
 
      .main-btn {
